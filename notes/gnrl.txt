@@ -1,0 +1,16 @@
+                                    RESET API 
+il faut tjr donner le "status code" for the response (json file) psk le dev du frontend il va tester ce status pour savoir 
+si c success or echec 
+
+on peut définir tout les domains qui peuvent accéder a notre serveur par l'ajout de notre header 'Access-Control-Allow-Order' , 'les domains specifie' 
+on peut specifi aussi les methodes qu'on veut travailler avec 
+
+dans le react app on va pas utiliser le json pour passer des donnée au back kan il ya un file psk le file peut etre plus grand qu'un texte 
+et c pour cela qu'on va utiliser les FormData  et dans les formData on utilise la methode append pour passer des donnée 
+et on est pas obliger de passer les headers
+
+l'authentification dans les reset API : 
+    on creé a JsonWebToken( qui a une clé secrete) dans le server side et on la stocke dans le browser et elle sera réenvoyer dans chaque req
+    fait par le user, et dans le server side on verifie la clé de la token si est egale avec celle qu'on generer 
+        le token est generer suivant les donner kan passe dedans (il ne faut pas passer des donnée senssible)
+        apres il genere une clé suivant le secret li na3touhleh (second argument)

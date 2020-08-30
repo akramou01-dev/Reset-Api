@@ -1,0 +1,6 @@
+on utiliser juste POST request avec query 
+pour definir les query on utilise "type" et pour definir les structure de donnée qui sont donnée en parametre on utilise "input"
+"originalError" c une field ajouter par express-graphql lorsqu'il ya une error qui est thronw par toi mm ou dans le code 
+si il n'ya pas "originalError" alors c une error de syntaxe ou qlq chose like that
+pour crée qlq chose on doit utiliser mutation et pour avoir un request sans crée qlq chose comme 'login' on utilser un query 
+on peut utiliser des variables dans les query mais il faut les definir 
